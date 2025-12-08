@@ -6,7 +6,23 @@ async function listar(req, res) {
 }
 
 async function adicionar(req, res) {
-  const livro = await Livro.create(req.body);
+  const livroData = {
+    titulo: req.body.titulo,
+    autor: req.body.autor,
+    estante: req.body.estante,
+    situacao: req.body.situacao,
+    classificacao: req.body.classificacao,
+  };
+
+  if (req.file) {
+    livroData.imagem = {
+      data: req.file.buffer,
+      contentType: req.file.mimetype,
+    };
+  }
+
+  const livro = await Livro.create(livroData);
+
   res.status(201).json({
     mens: `O livro ${livro.titulo} adicionado a estante`,
     livro,

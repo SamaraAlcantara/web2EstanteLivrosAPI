@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const { Schema, model } = mongoose;
 
 
+
 const modeloEstante = new Schema(
   {
     titulo: String,
@@ -9,6 +10,10 @@ const modeloEstante = new Schema(
     estante: String,
     situacao: String,
     classificacao: Number,
+    imagem: {
+      data: Buffer,
+      contentType: String,
+    }
   },
 );
 
