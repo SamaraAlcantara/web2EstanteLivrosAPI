@@ -2,7 +2,7 @@ const Livro = require("../models/SchemaLivro");
 //funções de manipulação dos livros
 async function listar(req, res) {
   const livros = await Livro.find();
-  res.json(livros);
+  res.status(200).json(livros);
 }
 
 async function adicionar(req, res) {
@@ -23,20 +23,19 @@ async function excluir(req, res) {
     });
   }
   const livro = await Livro.findByIdAndDelete(id); //utiliza o método para localizar pelo ir e excluir
-  res.json({ mens: `Livro ${livro.titulo} excluído da estante.` });
+  res.status(201).json({ mens: `Livro ${livro.titulo} excluído da estante.` });
 }
-
 
 async function pesquisarID(req, res) {
   const { id } = req.params;
-  const livro = await Livro.findById(id);//busca no db pelo is
+  const livro = await Livro.findById(id); //busca no db pelo is
 
   if (!livro) {
     return res.status(404).json({
       mens: "Livro não encontrado",
     });
   }
-  res.json(livro);
+  res.status(201).json(livro);
 }
 
 module.exports = { listar, adicionar, excluir, pesquisarID };
