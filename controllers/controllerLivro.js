@@ -54,4 +54,8 @@ async function pesquisarID(req, res) {
   res.status(201).json(livro);
 }
 
-module.exports = { listar, adicionar, excluir, pesquisarID };
+async function downloadLista (req, res){
+  res.download("pdfs/Lista Estante Livros.pdf");
+};
+
+module.exports = { listar, adicionar, excluir, pesquisarID, downloadLista };

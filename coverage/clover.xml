@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1765160680280" clover="3.2.0">
-  <project timestamp="1765160680280" name="All files">
-    <metrics statements="223" coveredstatements="125" conditionals="9" coveredconditionals="5" methods="9" coveredmethods="5" elements="241" coveredelements="135" complexity="0" loc="223" ncloc="223" packages="7" files="8" classes="8"/>
+<coverage generated="1765281001791" clover="3.2.0">
+  <project timestamp="1765281001791" name="All files">
+    <metrics statements="249" coveredstatements="144" conditionals="10" coveredconditionals="5" methods="10" coveredmethods="5" elements="269" coveredelements="154" complexity="0" loc="249" ncloc="249" packages="8" files="9" classes="9"/>
     <package name="web2EstanteLivrosAPI">
-      <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="app.js" path="C:\Users\Samara\Desktop\WEB2\web2EstanteLivrosAPI\app.js">
-        <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="app.js" path="D:\Arquivos_Sistema\Desktop\IFCE - Samara\web2EstanteLivrosAPI\app.js">
+        <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -27,11 +27,12 @@
         <line num="19" count="1" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
       </file>
     </package>
     <package name="web2EstanteLivrosAPI.auth">
       <metrics statements="16" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="authUser.js" path="C:\Users\Samara\Desktop\WEB2\web2EstanteLivrosAPI\auth\authUser.js">
+      <file name="authUser.js" path="D:\Arquivos_Sistema\Desktop\IFCE - Samara\web2EstanteLivrosAPI\auth\authUser.js">
         <metrics statements="16" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -51,10 +52,19 @@
         <line num="16" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="web2EstanteLivrosAPI.config">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="multer.js" path="D:\Arquivos_Sistema\Desktop\IFCE - Samara\web2EstanteLivrosAPI\config\multer.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="web2EstanteLivrosAPI.controllers">
-      <metrics statements="84" coveredstatements="42" conditionals="6" coveredconditionals="4" methods="6" coveredmethods="4"/>
-      <file name="controllerLivro.js" path="C:\Users\Samara\Desktop\WEB2\web2EstanteLivrosAPI\controllers\controllerLivro.js">
-        <metrics statements="41" coveredstatements="33" conditionals="6" coveredconditionals="4" methods="4" coveredmethods="4"/>
+      <metrics statements="104" coveredstatements="55" conditionals="7" coveredconditionals="4" methods="7" coveredmethods="4"/>
+      <file name="controllerLivro.js" path="D:\Arquivos_Sistema\Desktop\IFCE - Samara\web2EstanteLivrosAPI\controllers\controllerLivro.js">
+        <metrics statements="61" coveredstatements="46" conditionals="7" coveredconditionals="4" methods="5" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
@@ -70,34 +80,54 @@
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="20" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
-        <line num="29" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="29" count="1" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="33" count="1" type="cond" truecount="0" falsecount="1"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
+        <line num="32" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="cond" truecount="0" falsecount="1"/>
         <line num="37" count="0" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
       </file>
-      <file name="controllerUserAuth.js" path="C:\Users\Samara\Desktop\WEB2\web2EstanteLivrosAPI\controllers\controllerUserAuth.js">
+      <file name="controllerUserAuth.js" path="D:\Arquivos_Sistema\Desktop\IFCE - Samara\web2EstanteLivrosAPI\controllers\controllerUserAuth.js">
         <metrics statements="43" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -146,7 +176,7 @@
     </package>
     <package name="web2EstanteLivrosAPI.middleware">
       <metrics statements="24" coveredstatements="16" conditionals="3" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <file name="authToken.js" path="C:\Users\Samara\Desktop\WEB2\web2EstanteLivrosAPI\middleware\authToken.js">
+      <file name="authToken.js" path="D:\Arquivos_Sistema\Desktop\IFCE - Samara\web2EstanteLivrosAPI\middleware\authToken.js">
         <metrics statements="24" coveredstatements="16" conditionals="3" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -176,7 +206,7 @@
     </package>
     <package name="web2EstanteLivrosAPI.models">
       <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="SchemaUser.js" path="C:\Users\Samara\Desktop\WEB2\web2EstanteLivrosAPI\models\SchemaUser.js">
+      <file name="SchemaUser.js" path="D:\Arquivos_Sistema\Desktop\IFCE - Samara\web2EstanteLivrosAPI\models\SchemaUser.js">
         <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -196,9 +226,9 @@
       </file>
     </package>
     <package name="web2EstanteLivrosAPI.routes">
-      <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="routesEstante.js" path="C:\Users\Samara\Desktop\WEB2\web2EstanteLivrosAPI\routes\routesEstante.js">
-        <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="routesEstante.js" path="D:\Arquivos_Sistema\Desktop\IFCE - Samara\web2EstanteLivrosAPI\routes\routesEstante.js">
+        <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -216,11 +246,13 @@
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
       </file>
     </package>
     <package name="web2EstanteLivrosAPI.services">
       <metrics statements="46" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="registroUser.js" path="C:\Users\Samara\Desktop\WEB2\web2EstanteLivrosAPI\services\registroUser.js">
+      <file name="registroUser.js" path="D:\Arquivos_Sistema\Desktop\IFCE - Samara\web2EstanteLivrosAPI\services\registroUser.js">
         <metrics statements="46" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>

@@ -1,7 +1,7 @@
 const User = require("../models/SchemaUser.js");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
-const { gerarToken } = require("../auth/authUser.js");
+//const { gerarToken } = require("../auth/authUser.js");
 
 
 async function registro(req, res) {
@@ -26,7 +26,7 @@ async function registro(req, res) {
       email,
       senha: senhaHash,
     });
-    const token = gerarToken(novoUser);
+    //const token = gerarToken(novoUser);
 
     return res.status(201).json({
       mensagem: "Usuário registrado com sucesso.",
@@ -34,8 +34,8 @@ async function registro(req, res) {
         id: novoUser._id,
         nome: novoUser.nome,
         email: novoUser.email,
-      },
-      token,
+      }
+      //token,
     });
   } catch (error) {
     console.error("Erro ao registrar usuário:", error);
