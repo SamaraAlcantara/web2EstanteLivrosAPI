@@ -15,5 +15,6 @@ router.post("/adicionar", tokenValido,upload.single("imagem"),livroControler.adi
 router.delete("/excluir/:id", tokenValido, livroControler.excluir);
 router.get("/pesquisar/:id", tokenValido, livroControler.pesquisarID);
 router.get("/download", tokenValido, livroControler.downloadLista);
+router.put("/atualizar/:id", tokenValido, livroControler.atualizar);
 
 module.exports = router;

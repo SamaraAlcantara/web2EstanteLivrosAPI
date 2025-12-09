@@ -53,9 +53,26 @@ async function pesquisarID(req, res) {
   }
   res.status(201).json(livro);
 }
+async function atualizar(req, res) {
+  const {id} = req.params;
+  const livroAtualizado = await Livro.findByIdAndUpdate(id, req.body, {new: true, runValidators: true});
+
+  if (!id){
+      return res.status(404).json({
+      mens: "Livro não localizado na estante",
+    });
+  }
+  
+  res.status(201).json({
+    mens: `Livro ${livroAtualizado.titulo} atualizado`,
+    livro: livroAtualizado
+  });
+  
+  }
+  
 
 async function downloadLista (req, res){
   res.download("pdfs/Lista Estante Livros.pdf");
 };
 
-module.exports = { listar, adicionar, excluir, pesquisarID, downloadLista };
+module.exports = { listar, adicionar, excluir, pesquisarID, downloadLista, atualizar };

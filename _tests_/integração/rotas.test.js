@@ -14,6 +14,10 @@ jest.mock("../../models/SchemaLivro.js", () => ({
     titulo: "Livro C",
     autor: "Autor C",
   }),
+  findByIdAndUpdate: jest.fn().mockResolvedValue(
+    {_id: "001", titulo: "Livro A", autor: "Autor A"},
+  ),
+
   findByIdAndDelete: jest.fn().mockResolvedValue({
     _id: "001",
   }),
@@ -25,7 +29,7 @@ const jwt = require("jsonwebtoken");
 
 const { secretKey } = require("../../auth/authUser.js");
 const app = require("../../app.js");
-const { findById, findByIdAndDelete } = require("../../models/SchemaLivro.js");
+const { findById, findByIdAndDelete, findByIdAndUpdate } = require("../../models/SchemaLivro.js");
 
 const token = jwt.sign({ id: "123", email: "teste@teste.com" }, secretKey, {
   expiresIn: "1h",
@@ -78,5 +82,24 @@ describe("Teste de Rotas", () => {
       .set("Authorization", `Bearer ${token}`);
 
     expect(response.status).toBe(201);
+  });
+});
+
+describe("Teste de Rotas", () => {
+  test("Teste ATUALIZAR livo na estante", async()=>{
+    const atualizacaoLivro = {
+      _id: "002",
+      titulo: "Livro C",
+      autor: "Autor C",
+    };
+    const id = "001";
+    const response = await request(app)
+      .put(`/atualizar/${id}`)
+      .set("Authorization", `Bearer ${token}`)
+      .send(atualizacaoLivro);
+
+    expect(response.status).toBe(201);
+
+
   });
 });
