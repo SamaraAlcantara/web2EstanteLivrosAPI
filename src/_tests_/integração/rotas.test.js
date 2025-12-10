@@ -86,7 +86,7 @@ describe("Teste de Rotas", () => {
 });
 
 describe("Teste de Rotas", () => {
-  test("Teste ATUALIZAR livo na estante", async()=>{
+  test("Teste ATUALIZAR livro na estante", async()=>{
     const atualizacaoLivro = {
       _id: "002",
       titulo: "Livro C",
