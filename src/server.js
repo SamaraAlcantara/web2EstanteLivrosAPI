@@ -5,8 +5,7 @@ const app = require("./app.js");
 const conectarDB = require("./config/db.js");
 conectarDB();
 
-/*
+
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
-*/
