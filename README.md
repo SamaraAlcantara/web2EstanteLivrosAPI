@@ -81,9 +81,12 @@ Na versão atual, o projeto está integrado ao **MongoDB Atlas**, garantindo mai
 
 ##### 🔐 Login e Autenticação
 Após o cadastro, o usuário pode realizar o login para receber um **token JWT**, que permite acessar todas as funcionalidades da API.
+<img width="919" height="512" alt="rota login" src="https://github.com/user-attachments/assets/9a20cefe-6fd5-4d28-9888-eee68549f5ef" />
+- A senha é criptografada com a utilização da biblioteca **bcryptjs**. Com a validação do usuário, o mesmo recebe o token de acesso no formato JWT.
 
 ##### ➕ Adicionar Livro
 Permite inserir um novo livro na estante, incluindo título, autor, categoria, situação e classificação.
+
 
 ##### 🔍 Pesquisar Livro
 Busca livros cadastrados através do ID único.
@@ -114,6 +117,10 @@ Remove um livro específico da estante pelo seu ID.
 - [**VS Code**](https://code.visualstudio.com/docs) — Editor de código utilizado para desenvolvimento.
 
 #### 5. Exemplos/Testes
+- Para utilizar a aplicação o usuário deve ter e-mail e senha cadastrados. Caso contrário o acesso aos recursos é negado.
+
+** ROTAS**
+
 
 
 
