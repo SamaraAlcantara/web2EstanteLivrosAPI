@@ -12,7 +12,7 @@
 2. [Requisitos](#requisitos)
 3. [Funcionalidades](#funcionalidades)
 4. [Tecnologias e Recursos](#tecnologias-e-recursos)
-5. [Exemplos/Testes](#exemplostestes)
+5. [Testes](#testes)
 
 #### 1. Descrição
 <p align="justify">
@@ -27,9 +27,7 @@ Na versão atual, o projeto está integrado ao **MongoDB Atlas**, garantindo mai
   ├──src/
   |  ├── _tests_
   |    ├── integração
-  |      └── rotas.test.js
-  |    └── mock
-  |      └── dados.mock.js 
+  |      └── rotas.test.js 
   |  ├── auth
   |    └── authUser.js
   |  ├── config
@@ -53,9 +51,9 @@ Na versão atual, o projeto está integrado ao **MongoDB Atlas**, garantindo mai
   |    └── registroUser.js
   |  ├── utils
   |    └── utils.js
-  ├── app.js
-  ├── server.js
-  └── jest.config.js
+  |  ├── app.js
+  |  ├── server.js
+  |  └── jest.config.js
 
 ```
 
@@ -86,23 +84,30 @@ Após o cadastro, o usuário pode realizar o login para receber um **token JWT**
 
 ##### ➕ Adicionar Livro
 Permite inserir um novo livro na estante, incluindo título, autor, categoria, situação e classificação.
-
+![rota adicionar com imagem](https://github.com/user-attachments/assets/4900d423-c210-4856-b617-b5f144416d58)
+- O usuário tem a opção de inserir o item com ou sem imagem. A imagem é salva em buffer (formato array de bytes).
+- Para permitir o envio da imagem (arquivo) foi utilizado o middleware Multer, que permite adicionar um objeto file no body da requisição.
 
 ##### 🔍 Pesquisar Livro
 Busca livros cadastrados através do ID único.
+![rota pesquisar](https://github.com/user-attachments/assets/7bb36a14-e858-4085-ba3f-341961b242ff)
 
 ##### ✏️ Atualizar Livro
 Atualiza informações de um livro já existente na estante.
+![rota atualizar](https://github.com/user-attachments/assets/a9594cbf-7196-4415-a5e9-007fbda1dd1a)
 
 ##### 📄 Listar Todos os Livros
 Retorna todos os livros cadastrados no banco de dados.
+![rota listar](https://github.com/user-attachments/assets/e74a32dd-950f-4dae-bf76-eeb9a6d9a9e9)
 
 ##### ⬇️ Download da Lista
 Permite baixar a lista completa de livros cadastrados.
+![rota download](https://github.com/user-attachments/assets/b1831302-c1df-485c-8676-79276501af9f)
 
 ##### 🗑️ Deletar Livro
 Remove um livro específico da estante pelo seu ID.
- 
+![rota delete](https://github.com/user-attachments/assets/726099f3-f568-4668-995a-0e60ec9be87b)
+
 #### 4. Tecnologias e Recursos
 
 - [**JavaScript**](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) — Linguagem utilizada no desenvolvimento da API.
@@ -116,10 +121,13 @@ Remove um livro específico da estante pelo seu ID.
 - [**Git**](https://git-scm.com/doc) — Controle de versão utilizado no desenvolvimento do projeto.
 - [**VS Code**](https://code.visualstudio.com/docs) — Editor de código utilizado para desenvolvimento.
 
-#### 5. Exemplos/Testes
-- Para utilizar a aplicação o usuário deve ter e-mail e senha cadastrados. Caso contrário o acesso aos recursos é negado.
+#### 5. Testes
+- Os testes unitários foram realizados utilizando o frameworks Jest, com uma estrutura de dados mockados para que o fluxo fosse mais eficiênte.
+  
+![dados mockados](https://github.com/user-attachments/assets/faac78e8-9604-47f4-a298-593d1cf4f06c)   ![teste jest](https://github.com/user-attachments/assets/a7740cc3-dc3b-4694-9dd0-44cd8e756329)
 
-** ROTAS**
+
+
 
 
 
