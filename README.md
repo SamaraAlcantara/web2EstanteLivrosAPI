@@ -21,7 +21,45 @@ A API **Estante de Livros** foi desenvolvida para simular, em ambiente digital, 
 Construída com **Node.js** e **Express**, a API organiza e manipula os dados de forma estruturada, utilizando objetos JavaScript e seguindo boas práticas de desenvolvimento.
 
 Na versão atual, o projeto está integrado ao **MongoDB Atlas**, garantindo maior capacidade de armazenamento, persistência e controle dos dados, possibilitando que as informações da estante sejam mantidas de forma segura e escalável.
+
+- **Organização de Pastas**
+```
+  ├──src/
+  |  ├── _tests_
+  |    ├── integração
+  |      └── rotas.test.js
+  |    └── mock
+  |      └── dados.mock.js 
+  |  ├── auth
+  |    └── authUser.js
+  |  ├── config
+  |    ├── db.js
+  |    └── multer.js
+  |  ├── controllers
+  |    ├── controllerLivros.js
+  |    └── controllerUserAuth.js
+  |  ├── img
+  |  ├── middleware
+  |    ├── authToken.js
+  |    └── diaValido.js
+  |  ├── models
+  |    ├── SchemaLivro.js
+  |    ├── SchemaRegistro.js
+  |    └── SchemaUser.js
+  |  ├── pdfs
+  |  ├── routes
+  |    └── routesEstante.js
+  |  ├── services
+  |    └── registroUser.js
+  |  ├── utils
+  |    └── utils.js
+  ├── app.js
+  ├── server.js
+  └── jest.config.js
+
+```
 </p>
+
 
 #### 2. Requisitos
 
