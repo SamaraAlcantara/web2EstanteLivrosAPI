@@ -138,6 +138,8 @@ A aplicação foi desenvolvida como requisito de avaliação da disciplina de Pr
 
 A arquitetura escolhida objetivou a fácil manutenção, escalabilidade e integração com novos módulos, garantindo que futuras melhorias possam ser implementadas sem dificuldades.
 
+#### Autora: Samara Oliveira Alcantara
+
 
 
 
