@@ -58,6 +58,14 @@ Na versão atual, o projeto está integrado ao **MongoDB Atlas**, garantindo mai
   └── jest.config.js
 
 ```
+
+- **Arquitetura**
+<img width="441" height="411" alt="Diagrama sem nome drawio" src="https://github.com/user-attachments/assets/c0aec9db-5914-45fc-bcae-dad61ec44db8" />
+
+- Usuário → envia dados para login e validação → A **API** após validação dos dados devolve token (JWT) de acesso para o usuário
+- Com o token de acesso, o usuário abre requisição para os serviços da API → Os dados são cbuscados no **MongoDB Atlas (AWS)**  
+- O MongoDB Atlas → devolve dados conforme solicitado → retorno de resposta ao usuário
+
 </p>
 
 
@@ -67,7 +75,7 @@ Na versão atual, o projeto está integrado ao **MongoDB Atlas**, garantindo mai
 - Rota POST para inserir dados no DB (inclusive imagens)
 - Rota GET para exibir os dados armazenados no DB
 - Rota PUT para atualizar dados no DB
-- Rota DELE para excluir dados do DB
+- Rota DELETE para excluir dados do DB
    
 #### 3. Funcionalidades
 
@@ -106,5 +114,6 @@ Remove um livro específico da estante pelo seu ID.
 - [**VS Code**](https://code.visualstudio.com/docs) — Editor de código utilizado para desenvolvimento.
 
 #### 5. Exemplos/Testes
+
 
 
