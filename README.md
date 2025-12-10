@@ -6,6 +6,7 @@
 </div>
 
 ### 📑 Sumário
+
 1. [Descrição](#descrição)
    - [Organização de Pastas](#organização-de-pastas)
    - [Arquitetura](#o-arquitetura)
@@ -13,8 +14,10 @@
 3. [Funcionalidades](#funcionalidades)
 4. [Tecnologias e Recursos](#tecnologias-e-recursos)
 5. [Testes](#testes)
+6. [Conclusão](#conclusão)
 
 #### 1. Descrição
+
 <p align="justify">
 A API **Estante de Livros** foi desenvolvida para simular, em ambiente digital, a organização de uma estante física. Ela permite ao usuário **listar, adicionar, remover, atualizar e classificar** livros já lidos ou que estão na lista de próximas leituras.
 
@@ -23,6 +26,7 @@ Construída com **Node.js** e **Express**, a API organiza e manipula os dados de
 Na versão atual, o projeto está integrado ao **MongoDB Atlas**, garantindo maior capacidade de armazenamento, persistência e controle dos dados, possibilitando que as informações da estante sejam mantidas de forma segura e escalável.
 
 - **Organização de Pastas**
+  
 ```
   ├──src/
   |  ├── _tests_
@@ -58,6 +62,7 @@ Na versão atual, o projeto está integrado ao **MongoDB Atlas**, garantindo mai
 ```
 
 - **Arquitetura**
+  
 <img width="441" height="411" alt="Diagrama sem nome drawio" src="https://github.com/user-attachments/assets/c0aec9db-5914-45fc-bcae-dad61ec44db8" />
 
 - Usuário → envia dados para login e validação → A **API** após validação dos dados devolve token (JWT) de acesso para o usuário
@@ -122,9 +127,16 @@ Remove um livro específico da estante pelo seu ID.
 - [**VS Code**](https://code.visualstudio.com/docs) — Editor de código utilizado para desenvolvimento.
 
 #### 5. Testes
+
 - Os testes unitários foram realizados utilizando o frameworks Jest, com uma estrutura de dados mockados para que o fluxo fosse mais eficiênte.
   
 ![dados mockados](https://github.com/user-attachments/assets/faac78e8-9604-47f4-a298-593d1cf4f06c)   ![teste jest](https://github.com/user-attachments/assets/a7740cc3-dc3b-4694-9dd0-44cd8e756329)
+
+#### 🏁 6. Conclusão
+
+A aplicação foi desenvolvida como requisito de avaliação da disciplina de Projeto de Sistemas Web II.
+
+A arquitetura escolhida objetivou a fácil manutenção, escalabilidade e integração com novos módulos, garantindo que futuras melhorias possam ser implementadas sem dificuldades.
 
 
 
